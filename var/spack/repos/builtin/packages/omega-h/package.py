@@ -39,7 +39,7 @@ class OmegaH(CMakePackage):
     depends_on('zlib', when='+zlib')
 
     # https://gcc.gnu.org/bugzilla/show_bug.cgi?id=86610
-    conflicts('%gcc@8:')
+    conflicts('%gcc@8:8.2.99')
 
     def _bob_options(self):
         cmake_var_prefix = 'Omega_h_CXX_'
